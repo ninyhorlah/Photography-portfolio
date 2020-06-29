@@ -79,7 +79,7 @@ nav {
 
 .btn-2 {
     background-color: #e5e5e5;
-    padding: 6% 17%;
+    padding: 6% 18% !important;
 }
 
 .btn-2 a {
@@ -318,7 +318,7 @@ nav {
     margin: 50px 0 30px 0;
 }
 .inner-color1, .inner-color2, .inner-color3 {
-    font-weight: boldp;
+    font-weight: bold;
 }
 
 .inner-color3 {
@@ -385,13 +385,14 @@ nav {
 }
 
 .contact-section .container {
-    margin: 100px auto;
+    margin: 50px auto 100px auto;
 }
 
 .contact-section h4 {
     line-height: 60px;
     font-size: 50px;
     font-weight: 500;
+    padding-bottom: 50px;
 }
 
 .contact-section .booking {
@@ -424,7 +425,7 @@ span {
 
 .contact-row-2 {
     width: 100%;
-    padding-left: 80px;
+    padding-left: 10%;
 }
 
 input, textarea {
@@ -453,12 +454,208 @@ footer img {
 }
 
 /* Using mediaquery to rearrange the nav position */
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 600px) {
+
+    /* Nav */
     .logo {
-        float: right !important;
+        margin: auto;
+        align-items: center;
     }
 
-    .navbar-toggler {
-        float: left !important;
+    .navbar-collapse {
+        float: left;
     }
+
+    
+
+    /* Styling the section-1 text */
+.section-1-text {
+    text-align: center;
+   margin: 0 auto;
+}
+.section-1-text h1{
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.section-1-text p {
+    font-size: 20px;
+    line-height: 150%;
+    font-weight: 300;
+}
+
+/* styling the section-1 button */
+.section-1-text button {
+    padding: 5% 10%;
+    margin-top: 20px;
+}
+
+.btn-row {
+    margin: 50px 0;
+}
+
+.btn-1 a, .btn-2 a {
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.btn-2 {
+    padding: 4% 11.5% !important;
+}
+
+/* Styling the about section */
+.section-two {
+    padding-bottom: 10%;
+}
+
+/* Giving the about me text a background of about me */
+.section-two .text-center {
+    width: 90%;
+    margin: 20px auto 50px auto;
+}
+
+.section-two h3 {
+    margin: 0 auto;
+    font-size: 40px;
+    line-height: 60px;
+    color: #000000;
+    padding: 50px 0;
+}
+
+/* Styling the about me image and placing them on top of each other */
+.section-two-img img{
+    width: 100%;
+}
+.img-1 {
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.img-2 {
+    position: absolute;
+    left: 40px; 
+    top: -35px;    
+    width: 70%; 
+}
+
+/* styling the about me text */
+.section-two-text {
+    width: 100%;
+    color: #121212;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 150%;
+    padding-left: 50px;
+}
+
+/* styling the portfolio section */
+.nav {
+    padding: 8px;
+    margin-bottom: 30px;
+}
+
+.nav a {
+    font-size: 18px;
+}
+.portfolio .photo-head {
+    width: 90%;
+    margin: 40px auto 80px auto;
+}
+
+.portfolio h3 {
+    font-size: 22px;
+    line-height: 26px;
+}
+
+/* styling the portfolio section button */
+.portfolio button a {
+    font-size: 18px;
+    line-height: 21px;
+}
+
+/* Styling the pricing section */
+.pricing-section{
+    width: 60%;
+    margin: 0 auto;
+}
+.pricing-section h4 {
+    font-size: 27px;
+    line-height: 26px;
+}
+
+.inner-price h5 {
+    line-height: 17px;
+    font-size: 14px;
+}
+
+.inner-price p {
+    letter-spacing: .03em;
+    line-height: 19px;
+    font-size: 16px;
+}
+
+.inner-price button a{
+    color: #ffffff;
+    line-height: 19px;
+    font-size: 16px;
+}
+
+/* styling the connect section */
+.connect-section h4{
+    margin: 60px auto 100px auto;
+    line-height: 26px;
+    font-size: 22px;
+}
+
+.connect-btn a {
+    line-height: 21px;
+    font-size: 18px;
+}
+
+/* styling the contact section */
+.contact-section h4 {
+    line-height: 26px;
+    font-size: 22px;
+}
+
+.contact-section .booking {
+    font-size: 18px;
+}
+
+.contact-row-1 {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.contact-row-1 h5 {
+    line-height: 150%;
+    font-size: 18px;
+    padding-top: 40px;
+}
+
+.contact-row-1 p {
+    line-height: 22px;
+    font-size: 28px;
+}
+
+input, textarea {
+    width: 95%;
+}
+
+}
+
+@media only screen and (max-width: 1200px) {
+    /* Styling the about me image and placing them on top of each other */ */
+.section-two-img img{
+    width: 100%;
+}
+.img-1 {
+    position: relative;
+}
+.img-2 {
+    position: absolute;
+    left: 40px; 
+    top: -35px;    
+    width: 70%; 
+}
 }
